@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()='Auto_lname_v4']</value>
+         <value>//a[text()='Auto_lname_v4']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[text()='Auto_lname_v4']</value>
+      <value>//a[text()='Auto_lname_v4']</value>
    </webElementProperties>
 </WebElementEntity>

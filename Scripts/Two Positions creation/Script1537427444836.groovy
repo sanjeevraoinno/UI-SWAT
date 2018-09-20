@@ -2,6 +2,9 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.interactions.Actions
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -44,11 +47,11 @@ WebUI.waitForElementVisible(findTestObject('Organization/UI Swat Object Reposito
 
 WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Positions label'))
 
-String str1 = 'Position001'
+String str1 = 'Position002'
 
-String str2 = 'Error'
+boolean b=true
 
-String str3 = null
+boolean c
 
 WebUI.click(findTestObject('Organization/UI Swat Object Repository_Participant/Add _icon'))
 
@@ -68,23 +71,23 @@ WebUI.waitForElementVisible(findTestObject('Organization/UI Swat Object Reposito
 
 WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Title_name'))
 
-WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Participant combobox'))
+/*WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Participant combobox'))
 
-WebUI.sendKeys(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_search'), '*')
+WebUI.sendKeys(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_search'), 'Auto_lname_v4')
 
 WebUI.waitForElementVisible(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_name'), 30)
 
-WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_name'))
+Actions action = new Actions()
+action.moveToElement(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_name')).click().perform() 
+
+WebUI.click(findTestObject('Organization/UI Swat Object Repository_Positions/Participant_name'))*/
 
 WebUI.click(findTestObject('Organization/UI Swat Object Repository_Participant/Participant Save Button'))
 
 try {
-    WebUI.waitForElementVisible(findTestObject('Organization/UI Swat Object Repository_Positions/Errors'), 
+    c = WebUI.waitForElementVisible(findTestObject('Organization/UI Swat Object Repository_Positions/Errors'), 
         30)
-
-    String str3 = WebUI.getText(findTestObject('Organization/UI Swat Object Repository_Positions/Errors'))
-
-    System.out.println(str3)
+	   
 }
 catch (Exception e) {
     System.out.println(e)
@@ -92,11 +95,11 @@ catch (Exception e) {
 
 WebUI.waitForPageLoad(30)
 
-if (str2.equalsIgnoreCase(str3)) {
+if (c==b) {
     AssertionError
 } else {
     System.out.println('No Error found:the test passed')
 }
 
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
