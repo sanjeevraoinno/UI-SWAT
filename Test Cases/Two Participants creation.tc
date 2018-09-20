@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Two Participants creation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>817d1363-54d0-4db2-9a8e-a04626026799</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3a306c66-5b30-4b82-8178-22cdb1ef05f5</id>
+      <masked>false</masked>
+      <name>Payeeid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>82c6d32d-8494-457c-9858-1a36d137524f</id>
+      <masked>false</masked>
+      <name>Firstname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b4f5dd6c-94b4-45a3-9eb6-476d1a75ec3f</id>
+      <masked>false</masked>
+      <name>Lastname</name>
+   </variable>
+</TestCaseEntity>

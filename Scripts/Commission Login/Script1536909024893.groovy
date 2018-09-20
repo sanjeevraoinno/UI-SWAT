@@ -22,13 +22,13 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(Url)
+WebUI.navigateToUrl(Url2)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Portal Page/input_username'), Username)
+WebUI.setText(findTestObject('Portal Page/input_username'), Username2)
 
-WebUI.setText(findTestObject('Portal Page/input_password'), Password)
+WebUI.setText(findTestObject('Portal Page/input_password'), Password2)
 
 WebUI.click(findTestObject('Portal Page/button_Login'))
 

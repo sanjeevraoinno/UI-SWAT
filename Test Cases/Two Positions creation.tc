@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Two Positions creation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61514454-30b1-4ffd-82a8-1a63287416ed</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0662ce75-91f6-4077-be56-09e64d89e401</id>
+      <masked>false</masked>
+      <name>str</name>
+   </variable>
+</TestCaseEntity>

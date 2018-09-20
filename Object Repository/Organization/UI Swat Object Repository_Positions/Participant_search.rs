@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Participant_search</name>
+   <tag></tag>
+   <elementGuidId>e79b138f-d284-4b19-a475-b6a042fb0b2c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='select2-drop']//input[@class='select2-input'][@role='combobox']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='select2-drop']//input[@class='select2-input'][@role='combobox']</value>
+   </webElementProperties>
+</WebElementEntity>

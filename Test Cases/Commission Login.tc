@@ -26,4 +26,25 @@
       <masked>false</masked>
       <name>Url</name>
    </variable>
+   <variable>
+      <defaultValue>'https://ca1-lvcomapp-int6.callidussoftware.com:444/SalesPortal/#!/'</defaultValue>
+      <description></description>
+      <id>c96fcb1f-effb-4090-84f9-3677e4ab91d7</id>
+      <masked>false</masked>
+      <name>Url2</name>
+   </variable>
+   <variable>
+      <defaultValue>'PortalAdmin'</defaultValue>
+      <description></description>
+      <id>cc8e42b3-3f93-4ba9-8295-82ce51ac7350</id>
+      <masked>false</masked>
+      <name>Username2</name>
+   </variable>
+   <variable>
+      <defaultValue>'PortalAdmin'</defaultValue>
+      <description></description>
+      <id>603b6c2b-e5b0-4cbb-a5f0-6a56aff1bc54</id>
+      <masked>false</masked>
+      <name>Password2</name>
+   </variable>
 </TestCaseEntity>
